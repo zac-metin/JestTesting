@@ -31,3 +31,13 @@ react-test-renderer: to render Jest snapshots.
 Use JSDOM to run in-memory DOM, inbuilt in Jest.
 
 Centralized vs Alongside test file placement.
+
+# Unit Testing With Jest
+
+describe('Progress Bar', () => {
+  test('testname', () => {
+      const wrapper = shallow(<Component prop=prop />)
+      const expected = wrapper.instance().functionTested()
+      expect(expected).toEqual(actual)
+    })
+  })
